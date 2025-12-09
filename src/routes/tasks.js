@@ -1,8 +1,8 @@
 import { Router } from 'express';
-// ✅ CORRECCIÓN 1: Ajuste de ruta relativa a '../../' para el Controller
-import { createTask, getTasks, deleteTask, updateTask } from '../../controllers/taskController.js'; 
-// ✅ CORRECCIÓN 2: Ajuste de ruta relativa a '../../' para el Middleware
-import authMiddleware from '../../middleware/auth.js'; 
+// ✅ AJUSTE DE RUTA: Volvemos a un solo nivel ('../') para el Controller
+import { createTask, getTasks, deleteTask, updateTask } from '../controllers/taskController.js'; 
+// ✅ AJUSTE DE RUTA: Volvemos a un solo nivel ('../') para el Middleware
+import authMiddleware from '../middleware/auth.js'; 
 
 const r = Router();
 

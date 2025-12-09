@@ -1,9 +1,9 @@
 import express from 'express';
 import cors from 'cors';
-import { connectDB } from './config/db.js';
+import { connectDB } from './config/db.js'; // ✅ OK: Ruta relativa con extensión .js
 
-import authRoutes from './routes/auth.js';
-import taskRoutes from './routes/tasks.js';
+import authRoutes from './routes/auth.js'; // ✅ OK: Ruta relativa con extensión .js
+import taskRoutes from './routes/tasks.js'; // ✅ OK: Ruta relativa con extensión .js
 
 const app = express();
 
@@ -21,8 +21,8 @@ app.use(express.json());
 // ✅ RUTA DE VERIFICACIÓN DE SALUD (HEALTH CHECK) PARA RENDER
 // ------------------------------------------------------------------
 app.get('/healthz', (req, res) => {
-    // Render usará esta ruta simple para confirmar que el servidor Express está respondiendo.
-    res.status(200).send('OK');
+    // Render usará esta ruta simple para confirmar que el servidor Express está respondiendo.
+    res.status(200).send('OK');
 });
 
 // Rutas de la API
