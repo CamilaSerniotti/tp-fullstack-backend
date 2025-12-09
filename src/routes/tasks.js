@@ -1,7 +1,8 @@
 import { Router } from 'express';
-import { createTask, getTasks, deleteTask, updateTask } from '../controllers/taskController.js';
-// ✅ CORRECCIÓN CLAVE: Se usa './../' para mejorar la resolución de la ruta en Render.
-import authMiddleware from './../middleware/auth.js'; 
+// ✅ CORRECCIÓN 1: Ajuste de ruta relativa a '../../' para el Controller
+import { createTask, getTasks, deleteTask, updateTask } from '../../controllers/taskController.js'; 
+// ✅ CORRECCIÓN 2: Ajuste de ruta relativa a '../../' para el Middleware
+import authMiddleware from '../../middleware/auth.js'; 
 
 const r = Router();
 
