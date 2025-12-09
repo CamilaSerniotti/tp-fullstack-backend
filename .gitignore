@@ -1,0 +1,29 @@
+# ------------------------------------
+# 1. Dependencias y Caché
+# ------------------------------------
+# Directorio donde npm instala las dependencias (muy grande y no necesario)
+/node_modules
+
+# Archivos de caché o logs de npm
+npm-debug.log*
+yarn-error.log*
+.npm
+
+# ------------------------------------
+# 2. Archivos Sensibles y Secretos (¡CRÍTICO!)
+# ------------------------------------
+# Archivo de variables de entorno (contiene MONGO_URI, JWT_SECRET, etc.)
+# NUNCA debe subirse al repositorio.
+.env
+
+# ------------------------------------
+# 3. Caché de IDEs y OS
+# ------------------------------------
+# Directorios de VS Code
+.vscode/
+
+# Archivos de macOS
+.DS_Store
+
+# Archivos de Linux/Windows que usa el sistema operativo
+Thumbs.db
